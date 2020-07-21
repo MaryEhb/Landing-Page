@@ -2,7 +2,7 @@
 let landingPageEl = document.querySelector(".landing-page");
 
 // Get Array Of Images
-let imagesArray = ["img.png","img3.png","img5.png","img7.png"];
+let imagesArray = ["img.png","img5.png","img7.png"];
 
 let backgroundOption = true;
 let backgroundInterval;
