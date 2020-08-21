@@ -1,12 +1,20 @@
+/*variables*/
+
 // Select the Landing page Element
 let landingPageEl = document.querySelector(".landing-page");
-
 // Get Array Of Images
-let imagesArray = ["img.png","img5.png","img7.png"];
-
-let backgroundOption = true;
+let imagesArray = ["img.png","img5.png","img7.png"];let backgroundOption = true;
 let backgroundInterval;
+//menu button
+let menuButton = document.querySelector(".nav-button");
+let menuLinks = document.querySelector(".nav-button .links");
+//Skills progress when scroll
+let ourSkills = document.querySelector(".skills");
+//Gallery
+let ourGallery = document.querySelectorAll(".img-box img");
 
+
+/*functions*/
 //change Background Function
 function randomizeBackground(){
 	backgroundOption = true;
@@ -23,21 +31,15 @@ function randomizeBackground(){
 		},7500);
 	}	
 }
-
 randomizeBackground();
 
 
+/*events*/
 //menu button
-let menuButton = document.querySelector(".nav-button");
-let menuLinks = document.querySelector(".nav-button .links");
-
 menuButton.onclick = function() {
 	menuLinks.classList.toggle("open");
 	menuButton.classList.toggle("open");
 }
-
-//Skills progress when scroll
-let ourSkills = document.querySelector(".skills");
 
 window.onscroll = function(){
 	//skills Outer Height
@@ -61,10 +63,7 @@ window.onscroll = function(){
 	}
 };
 
-
 //Gallery
-let ourGallery = document.querySelectorAll(".img-box img");
-
 ourGallery.forEach(img => {
 	img.addEventListener('click',(e) => {
 		
@@ -125,7 +124,6 @@ ourGallery.forEach(img => {
 		});
 	});
 });
-
 
 
 
