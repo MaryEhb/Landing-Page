@@ -1,70 +1,30 @@
+/*variables*/
 
 //Select setting-box
-let settingBoxEl = document.querySelector(".setting-box");
-let gearEl = document.getElementById("gear");
+const settingBoxEl = document.querySelector(".setting-box")
+const gearEl = document.getElementById("gear");
+//switch colors
+const colorLi = document.querySelectorAll(".colors-list li");
+const colorsBorder = document.querySelectorAll(".color-list");
+//random Background Option
+const backgroundButtons = document.querySelectorAll(".random-background span");
+//Dark Mode
+const darkModeButtons = document.querySelectorAll(".setting-box .page-mode span");
+let bulletsButtons = document.querySelectorAll(".setting-container .bullets-option span");
+let bulletsEl = document.querySelector(".nav-bullets");
+//Bullets On the right
+const bullets = document.querySelectorAll(".nav-bullets .bullets");
+//Reset Options
+const resetEl = document.getElementById('reset');
 
+
+/*functions*/
 
 //open and close the setting-box
 function openSettingBox(){
 	settingBoxEl.classList.toggle('open-setting-box');
 	gearEl.classList.toggle('spin');
 }
-
-//switch colors
-const colorLi = document.querySelectorAll(".colors-list li");
-var colorsBorder = document.querySelectorAll(".color-list");
-
-//event when the color is clicked
-colorLi.forEach(li => {
-	li.addEventListener('click', (e) => {
-		//set color in root
-		document.documentElement.style.setProperty('--main--color', e.target.dataset.color);
-		
-		//add border to the active color
-		for(i=0;i<colorsBorder.length;i++){
-			colorsBorder[i].classList.remove("active");
-		}
-		li.classList.add("active");
-	});
-});
-
-//random Background Option
-const backgroundButtons = document.querySelectorAll(".random-background span");
-
-
-
-//Change The opacity of the buttons 
-backgroundButtons.forEach(span => {
-	span.addEventListener('click', (e) => {
-		
-
-		for(i=0;i<backgroundButtons.length;i++){
-			backgroundButtons[i].classList.remove("active");
-		}
-		span.classList.add("active");
-		
-	});
-});
-
-//stop Random Background option function
-function stopRandomizeBackground(){
-	backgroundOption = false;
-	clearInterval(backgroundInterval);
-}
-
-//Dark Mode
-let darkModeButtons = document.querySelectorAll(".setting-box .page-mode span");
-darkModeButtons.forEach(span => {
-	span.addEventListener('click', (e) => {
-		
-
-		for(i=0;i<darkModeButtons.length;i++){
-			darkModeButtons[i].classList.remove("active");
-		}
-		span.classList.add("active");
-		
-	});
-});
 
 function darkMode(){
 	let body = document.getElementById("body");
@@ -145,11 +105,67 @@ function whiteMode(){
 	});
 }
 
+//show bullets
+function showBullets() {
+	bulletsEl.style.display = "block";
+}
 
+//hide bullets
+function hideBullets() {
+	bulletsEl.style.display = "none";
+}
+
+
+/*events*/
+
+//event when the color is clicked
+colorLi.forEach(li => {
+	li.addEventListener('click', (e) => {
+		//set color in root
+		document.documentElement.style.setProperty('--main--color', e.target.dataset.color);
+		
+		//add border to the active color
+		for(i=0;i<colorsBorder.length;i++){
+			colorsBorder[i].classList.remove("active");
+		}
+		li.classList.add("active");
+	});
+});
+
+//Change The opacity of the buttons 
+backgroundButtons.forEach(span => {
+	span.addEventListener('click', (e) => {
+		
+
+		for(i=0;i<backgroundButtons.length;i++){
+			backgroundButtons[i].classList.remove("active");
+		}
+		span.classList.add("active");
+		
+	});
+});
+
+//stop Random Background option function
+function stopRandomizeBackground(){
+	backgroundOption = false;
+	clearInterval(backgroundInterval);
+}
+
+//Dark Mode
+darkModeButtons.forEach(span => {
+	span.addEventListener('click', (e) => {
+		
+
+		for(i=0;i<darkModeButtons.length;i++){
+			darkModeButtons[i].classList.remove("active");
+		}
+		span.classList.add("active");
+		
+	});
+});
 
 //bullets Option
 //Change The opacity of the buttons 
-let bulletsButtons = document.querySelectorAll(".setting-container .bullets-option span");
 
 bulletsButtons.forEach(span => {
 	span.addEventListener('click', (e) => {
@@ -162,20 +178,8 @@ bulletsButtons.forEach(span => {
 	});
 });
 
-let bulletsEl = document.querySelector(".nav-bullets");
-//show bullets
-function showBullets() {
-	bulletsEl.style.display = "block";
-}
-
-//hide bullets
-function hideBullets() {
-	bulletsEl.style.display = "none";
-}
 
 //Bullets On the right
-var bullets = document.querySelectorAll(".nav-bullets .bullets");
-
 bullets.forEach(bullet => {
 	bullet.addEventListener('click', (e)=> {
 		document.querySelector(e.target.dataset.section).scrollIntoView({
@@ -187,8 +191,6 @@ bullets.forEach(bullet => {
 
 
 //Reset Options
-var resetEl = document.getElementById('reset');
-
 resetEl.onclick = function(){
 	window.location.reload();
 };
