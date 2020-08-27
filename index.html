@@ -5,9 +5,10 @@
 		<meta charset="UTF-8"/>
 		<title>Logo</title>
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"> 
+		<link rel="stylesheet" href="css/animate.min.css"> 
 		<link rel="stylesheet" href="css/normalize.css"/>
  		<link rel="stylesheet" href="css/style.css"/>
- 		<link rel="stylesheet" href="css/home.css"/>
+		<link rel="stylesheet" href="css/home.css"/>
 	</head>
 	<body id="body">
 	
@@ -59,7 +60,7 @@
 		<!--End Setting Box-->
 
 		<!--Start Bullets-->
-		<div class="nav-bullets">
+		<div class="nav-bullets animate__animated animate__fadeIn">
 			<div class="bullets" data-section=".about-us">
 				<div class="tooltip">About Us</div>
 			</div>
@@ -81,17 +82,17 @@
 			<div class="navigation">
 			<div class="container">
 			<div class="heading">
-				<div class="logo"><a href="index.html">Logo</a></div>
+				<div class="logo animate__animated animate__fadeInLeft"><a href="index.html">Logo</a></div>
 				<div class="links-container">
-					<ul class="links">
+					<ul class="links animate__animated animate__fadeInRight animate__slow">
 						<li><a href="index.html" class="active">Home</a></li>
-						<li><a href="products.html" class="">Products</a></li>
+						<li><a href="#" class="">About us</a></li>
 						<li><a href="#" class="">Services</a></li>
 						<li><a href="#" class="">Contact</a></li>
 					</ul>
 				</div>	
 				<!-- Burger Navigation-->
-			<button class="nav-button">
+			<button class="nav-button animate__animated animate__fadeIn">
 				<div>
 				<span></span>
 				<span></span>
@@ -99,7 +100,7 @@
 				</div>
 				<ul class="links">
 						<li><a href="index.html" class="active">Home</a></li>
-						<li><a href="products.html" class="">Products</a></li>
+						<li><a href="#" class="">about us</a></li>
 						<li><a href="#" class="">Services</a></li>
 						<li><a href="#" class="">Contact</a></li>
 					</ul>
@@ -112,18 +113,18 @@
 			
 			
 			<div class="introduction-text">
-				<h1>Heading <span class="main-color">for </span>Intro</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+				<h1 class="wow animate__animated animate__fadeIn animate__faster">Heading <span class="main-color">for </span>Intro</h1>
+				<p class=" wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
 			</div>
 		</div>
 		<!--End Landing Page-->
 		
 		<!--Start About Us-->
 		<div class="container">
-			<div class="about-us">
+			<section class="about-us">
 				<div class="info-box">
 					<h2>About Us</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+					<p class=" wow animate__animated animate__fadeInUp">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 				</div>
 				<div class="img-box">
 					<svg>					
@@ -261,12 +262,12 @@
 						
 					</svg>
 				</div>
-			</div>
+			</section>
 		</div>
 		<!--End About Us-->
 		
 		<!--Start Our Skills-->
-		<div class="skills">
+		<section class="skills bg-grey">
 			<div class="container">
 				<h2>Our Skills</h2>
 				<div class="skill-box">
@@ -290,41 +291,41 @@
 					<div class="skill-progress"><span class="fifth-skill"data-progress="35%"></span></div>
 				</div>
 			</div>
-		</div>
+		</section>
 		<!--End Our Skills-->
 		
 		<!--Start Gallery-->
-			<div class="gallery">
+			<section class="gallery">
 				<div class="container">
 					<h2>Gallery</h2>
 					<div class="img-box">
-						<img src="images/image2.png" alt="Astronauts Working With The Suit On"/>
-						<img src="images/image3.png" alt="the newest suit model"/>
-						<img src="images/image8.png" alt=""/>
-						<img src="images/image1.png" alt=""/>
-						<img src="images/image4.png" alt=""/>
-						<img src="images/img2.png" alt=""/>
-						<img src="images/img7.png" alt=""/>
-						<img src="images/img8.png" alt=""/>
+						<img src="images/image2.png" alt="Astronauts Working With The Suit On" class=" wow animate__animated animate__fadeInUp animate__faster"/>
+						<img src="images/image3.png" alt="the newest suit model" class=" wow animate__animated animate__fadeInUp animate__fast"/>
+						<img src="images/image8.png" alt="" class=" wow animate__animated animate__fadeInUp animate__slow"/>
+						<img src="images/image1.png" alt="" class=" wow animate__animated animate__fadeInUp animate__slower"/>
+						<img src="images/image4.png" alt="" class=" wow animate__animated animate__fadeInUp animate__faster animate__delay-1s"/>
+						<img src="images/img2.png" alt="" class=" wow animate__animated animate__fadeInUp animate__fast animate__delay-1s"/>
+						<img src="images/img7.png" alt="" class=" wow animate__animated animate__fadeInUp animate__slow animate__delay-1s"/>
+						<img src="images/img8.png" alt="" class=" wow animate__animated animate__fadeInUp animate__slower animate__delay-1s"/>
 					</div>
 				</div>
-			</div>
+			</section>
 		<!--End Gallery-->
 		
 		<!--Start TimeLine-->
-		<div class="timeline">
+		<section class="timeline bg-grey">
 			<div class="container">
 				<div class="timeline-content">
 					<div class="year">2020</div>
-					<div class="left">
-						<div class="content">
+					<div class="left ">
+						<div class="content wow animate__animated animate__fadeInLeft">
 							<h3>Heading</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
 					<div class="clearfix"></div>
 					<div class="right">
-						<div class="content">
+						<div class="content wow animate__animated animate__fadeInRight">
 							<h3>Heading</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
@@ -335,7 +336,7 @@
 					
 					<div class="year">2019</div>
 					<div class="left">
-						<div class="content">
+						<div class="content  wow animate__animated animate__fadeInLeft">
 							<h3>Heading</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
@@ -344,7 +345,7 @@
 
 					
 					<div class="right">
-						<div class="content">
+						<div class="content wow animate__animated animate__fadeInRight">
 							<h3>Heading</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
@@ -354,14 +355,14 @@
 					
 					<div class="year">2018</div>
 					<div class="left">
-						<div class="content">
+						<div class="content wow animate__animated animate__fadeInLeft">
 							<h3>Heading</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
 					</div>
 					<div class="clearfix"></div>
 					<div class="right">
-						<div class="content">
+						<div class="content wow animate__animated animate__fadeInRight">
 							<h3>Heading</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
@@ -371,7 +372,7 @@
 					
 					<div class="year">2017</div>
 					<div class="left">
-						<div class="content">
+						<div class="content wow animate__animated animate__fadeInLeft">
 							<h3>Heading</h3>
 							<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
 						</div>
@@ -380,31 +381,44 @@
 				
 				</div>
 			</div>
-		</div>
+		</section>
 		<!--End Timeline-->
 		
 		<!--Start Contact us-->
-		<div class="contact">
+		<section class="contact">
 			<div class="overlay-1"></div>
 			<div class="container">
 				<h2>Contact Us</h2>
 				<form action="">
 					<div class="left">
-						<input type="text" placeholder="Your Name" name="username"/>
-						<input type="text" placeholder="Your Phone" name="phone"/>
-						<input type="text" placeholder="Your Email" name="email"/>
-						<input type="text" placeholder="Subject" name="subject"/>
+						<input type="text" placeholder="Your Name" name="username" class=" wow animate__animated animate__fadeInUp animate__faster"/>
+						<input type="text" placeholder="Your Phone" name="phone" class=" wow animate__animated animate__fadeInUp animate__fast"/>
+						<input type="text" placeholder="Your Email" name="email" class=" wow animate__animated animate__fadeInUp animate__slow"/>
+						<input type="text" placeholder="Subject" name="subject" class=" wow animate__animated animate__fadeInUp animate__slower"/>
 					</div>
 					<div class="right">
-						<textarea placeholder="Your message" name="message"></textarea>
-						<input type="submit" value="Send"/>
+						<textarea placeholder="Your message" name="message" class=" wow animate__animated animate__fadeIn animate__faster"></textarea>
+						<input type="submit" value="Send" class=" wow animate__animated animate__fadeInUp"/>
 					</div>
 				</form>
 			</div>
-		</div>
+		</section>
 		<!--End Contact Us-->
+
+		<!--start footer-->
+		<footer>
+			<div class="container">  
+					<p>Copyright &copy;2020 your company </p>
+					<p>| designed by: Mary.E</p>
+			</div>	
+		</footer>
+		<!--End footer-->
 		
 		<script src="js/main.js"></script>
 		<script src="js/script.js"></script>
+		<script src="js/wow.min.js"></script>
+		<script>
+			new WOW().init();
+		</script>
 	</body>
 </html>
