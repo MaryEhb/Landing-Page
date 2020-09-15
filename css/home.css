@@ -422,7 +422,7 @@ transform: translateY(-50%);
 	justify-content:center;
 	align-items:center;
     color: #000;
-    left:-384px;
+    right: 1px;
 	bottom:-159px;
 	font-size:14px;
 	border-radius:4px;
