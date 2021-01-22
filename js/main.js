@@ -194,3 +194,33 @@ bullets.forEach(bullet => {
 resetEl.onclick = function(){
 	window.location.reload();
 };
+
+
+// sending the form
+
+function submitForm(e){
+    e.preventDefault();
+
+    let name = document.querySelector(".name").value;
+    let email = document.querySelector(".email").value;
+    let message = document.querySelector(".message").value;
+    let phone = document.querySelector(".phone").value;
+    let subject = document.querySelector(".subject").value;
+
+    sendEmail(name,email,message,phone,subject);
+    document.querySelector(".contact_form").reset();
+}
+
+function sendEmail(name,email,message,phone,subject){
+    Email.send({
+        Host:"smtp.gmail.com",
+        Username:'monicahans99@gmail.com',
+        Password: "mhhjqiqbeofwyojo",
+        To: "monicahans99@gmail.com",
+        From: "monicahans99@gmail.com",
+        Subject:`${name} sent you a message on subject:${subject}`,
+        Body:`Name:${name} <br/> Email: ${email}<br/> phone:${phone} <br/> Message: ${message}`,
+    }).then((message) => alert("mail sent successfully"));
+}
+
+document.querySelector(".contact_form").addEventListener('submit',submitForm);
