@@ -5,6 +5,7 @@
 		<meta charset="UTF-8"/>
 		    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Logo</title>
+		<!--https://www.linkedin.com/in/mariem-ehab-1431301b3/-->
 		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap"> 
 		<link rel="stylesheet" href="css/animate.min.css"> 
 		<link rel="stylesheet" href="css/normalize.css"/>
@@ -389,15 +390,15 @@
 			<div class="overlay-1"></div>
 			<div class="container">
 				<h2>Contact Us</h2>
-				<form action="">
+				<form method="POST" class="contact_form">
 					<div class="left">
-						<input type="text" placeholder="Your Name" name="username" class=" wow animate__animated animate__fadeInUp animate__faster"/>
-						<input type="text" placeholder="Your Phone" name="phone" class=" wow animate__animated animate__fadeInUp animate__fast"/>
-						<input type="text" placeholder="Your Email" name="email" class=" wow animate__animated animate__fadeInUp animate__slow"/>
-						<input type="text" placeholder="Subject" name="subject" class=" wow animate__animated animate__fadeInUp animate__slower"/>
+						<input type="text" placeholder="Your Name" name="username" class="name wow animate__animated animate__fadeInUp animate__faster"/>
+						<input type="text" placeholder="Your Phone" name="phone" class="phone wow animate__animated animate__fadeInUp animate__fast"/>
+						<input type="text" placeholder="Your Email" name="email" class="email wow animate__animated animate__fadeInUp animate__slow"/>
+						<input type="text" placeholder="Subject" name="subject" class="subject wow animate__animated animate__fadeInUp animate__slower"/>
 					</div>
 					<div class="right">
-						<textarea placeholder="Your message" name="message" class=" wow animate__animated animate__fadeIn animate__faster"></textarea>
+						<textarea placeholder="Your message" name="message" class="message wow animate__animated animate__fadeIn animate__faster"></textarea>
 						<input type="submit" value="Send" class=" wow animate__animated animate__fadeInUp"/>
 					</div>
 				</form>
@@ -414,6 +415,7 @@
 		</footer>
 		<!--End footer-->
 		
+		<script src="https://smtpjs.com/v3/smtp.js"></script>
 		<script src="js/main.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/wow.min.js"></script>
