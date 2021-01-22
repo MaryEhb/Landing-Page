@@ -223,4 +223,4 @@ function sendEmail(name,email,message,phone,subject){
     }).then((message) => alert("mail sent successfully"));
 }
 
-document.querySelector(".contact_form").addEventListener('submit',submitForm);
+document.querySelector(".submit").addEventListener('click',submitForm);
